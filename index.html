@@ -1,0 +1,131 @@
+<!doctype html>
+
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="utf-8" />
+
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>Chino IA</title>
+
+  <!-- fontes -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS (CodePen: coloque na aba CSS) -->
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- Loading -->
+
+  <div id="loading-screen" class="loading-screen">
+
+    <div class="loader"></div>
+
+    <div class="loading-text">Carregando Chino IA...</div>
+
+  </div>
+
+  <!-- Header -->
+
+  <header class="topbar">
+
+    <div class="logo-wrap">
+
+      <div class="logo">Chino <span>IA</span></div>
+
+    </div>
+
+    <button id="premium-btn" class="premium-btn">Premium ✨</button>
+
+  </header>
+
+  <!-- Main -->
+
+  <main>
+
+    <section id="music-container" class="music-container"></section>
+
+  </main>
+
+  <!-- Floating + -->
+
+  <button id="add-btn" class="fab">＋</button>
+
+  <!-- Form popup -->
+
+  <div id="form-popup" class="overlay hidden" aria-hidden="true">
+
+    <div class="panel">
+
+      <header class="panel-head">
+
+        <div class="panel-title">Gerar Música</div>
+
+        <button id="close-form" class="icon-close" aria-label="Fechar">✕</button>
+
+      </header>
+
+      <div class="panel-body">
+
+        <input id="music-title" placeholder="Título da música (mín 3 caracteres)" />
+
+        <select id="music-style" >
+
+          <option value="">Escolha o estilo</option>
+
+          <option>Calma</option>
+
+          <option>Alegre</option>
+
+          <option>Triste</option>
+
+          <option>Divulgação</option>
+
+          <option>Rock</option>
+
+          <option>Romântica</option>
+
+          <option>Eletrônica</option>
+
+          <option>Rap</option>
+
+          <option>Funk</option>
+
+          <option>Lo-fi</option>
+
+          <option>Sertanejo</option>
+
+          <option>Pop</option>
+
+        </select>
+
+        <textarea id="music-lyrics" rows="5" placeholder="Digite a letra (mín 10 caracteres)"></textarea>
+
+        <div class="actions-row">
+
+          <button id="generate-btn" class="btn-gold">Gerar</button>
+
+          <button id="cancel-btn" class="btn-ghost">Cancelar</button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Template note: a <script> to load logic (CodePen: cole na aba JS) -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
